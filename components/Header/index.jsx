@@ -9,7 +9,7 @@ const index = () => {
 
   return (
     <header>
-      <div className="container mx-auto flex sm:flex md:block lg:flex justify-between items-center p-7">
+      <div className="container mx-auto flex sm:flex md:block lg:flex justify-between items-center py-7 sm:px-0 px-7">
         <div className="2xl:2/12 lg:w-1/6 md:w-full sm:w-3/5 w-3/5 font-extrabold text-2xl md:text-center">
           <Link href="/" passHref>
             <span className="text__gradient uppercase">nft maria</span>
@@ -48,6 +48,7 @@ const index = () => {
           <ul className="flex justify-between items-center">
             <li className="text-slate-500">Login/Signup</li>
             <li className="bg-blue-400 px-7 py-1 font-bold text-white rounded-full bg__gradient">
+              {/* <i className="fa-solid fa-arrow-down mr-1"></i> */}
               Metamask
             </li>
           </ul>

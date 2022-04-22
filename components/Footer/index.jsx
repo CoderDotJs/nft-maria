@@ -18,7 +18,7 @@ const index = () => {
           <i className="fa-brands fa-twitter fa-2x text-2xl sm:text-4xl"></i>
         </div>
         <nav className="md:w-2/5 sm:w-3/5 w-6/12 mx-auto my-8 d-block">
-          <ul className="sm:flex sm:justify-between sm:items-center flex flex-col justify-center items-center text-slate-500	">
+          <ul className="sm:flex sm:justify-between sm:items-center flex flex-col sm:flex-row justify-between items-center text-slate-500	">
             <li>Home</li>
             <li>About</li>
             <li>Roadmap</li>

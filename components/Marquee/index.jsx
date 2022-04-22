@@ -9,7 +9,7 @@ const index = ({ text }) => {
       width="100%"
       direction="left"
       height="50px"
-      className={`${styles.gradient__marquee} flex justify-center items-center uppercase text-3xl text-extrabold`}
+      className={`${styles.gradient__marquee} flex justify-center items-center uppercase text-3xl font-extrabold`}
     >
       <span>
         {text

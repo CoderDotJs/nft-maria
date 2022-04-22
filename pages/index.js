@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Marquee from "../components/Marquee";
+import About from "../components/About";
 
 export default function Home() {
   return (
@@ -23,7 +24,8 @@ export default function Home() {
       </Head>
       {/* <Header /> */}
       <Banner />
-      <Marquee text="You might be thinking “Cool, but if only some browsers support this, if I set my text color to white and my background is white, the stroke makes it look cool in supporting browsers but entirely disappears in non-supporting browsers!”" />
+      <Marquee text="" />
+      <About />
       <main className={styles.main}></main>
 
       <Footer />

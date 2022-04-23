@@ -7,6 +7,8 @@ import Banner from "../components/Banner";
 import Marquee from "../components/Marquee";
 import About from "../components/About";
 import Metaverse from "../components/Metaverse";
+import Trailer from "../components/Trailer";
+import Properties from "../components/Properties";
 
 export default function Home() {
   return (
@@ -28,6 +30,8 @@ export default function Home() {
       <Marquee text="" />
       <About />
       <Metaverse />
+      <Trailer />
+      <Properties />
       <main className={styles.main}></main>
       <Footer />
     </div>

@@ -34,3 +34,6 @@ a {
 /* .top__text span:first{
   display: blo;
 } */
+.ytp-cued-thumbnail-overlay-image {
+  filter: brightness(150%);
+}

@@ -5,7 +5,8 @@ const index = ({ text }) => {
   return (
     <marquee
       behavior="scroll"
-      scrollAmount="10"
+      // scrollamount="30"
+      // loop="-1"
       width="100%"
       direction="left"
       height="50px"

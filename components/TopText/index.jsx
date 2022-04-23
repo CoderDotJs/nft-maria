@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 
-const index = ({ left, right, both = true, text }) => {
+const index = ({ left, right, both, align, text }) => {
   return (
-    <div className="flex justify-center items-center my-5 top__text leading-10 font-light text-sm uppercase text-slate-600 ">
+    <div
+      className={`flex ${
+        align ? align : "justify-center"
+      } items-center my-5 top__text leading-10 font-light text-sm uppercase text-slate-600`}
+    >
       {both && (
         <>
           <span className="block h-px w-14 bg-slate-600 mx-3"></span>

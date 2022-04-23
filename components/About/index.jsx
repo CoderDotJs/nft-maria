@@ -6,7 +6,7 @@ import TopText from "../TopText";
 const index = () => {
   return (
     <div className="container mx-auto my-14">
-      <TopText text="about" />
+      <TopText text="about" both={true} />
       <h1 className="uppercase text-center text-2xl sm:text-4xl font-extrabold leading-normal">
         Bring the Metaverse to <br />{" "}
         <span className="text__gradient">life with NFTs</span>

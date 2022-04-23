@@ -6,10 +6,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: -10%;
-  left: 0;
   width: 100%;
-  height: 20%;
+  height: 10rem;
+  top: -6rem;
   background: white;
-  transform: skewY(-3deg);
+  transform: skewY(-2deg);
 }

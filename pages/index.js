@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Marquee from "../components/Marquee";
 import About from "../components/About";
+import Metaverse from "../components/Metaverse";
 
 export default function Home() {
   return (
@@ -26,8 +27,8 @@ export default function Home() {
       <Banner />
       <Marquee text="" />
       <About />
+      <Metaverse />
       <main className={styles.main}></main>
-
       <Footer />
     </div>
   );

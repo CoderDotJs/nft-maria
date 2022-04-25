@@ -49,7 +49,7 @@ const index = () => {
       <h1 className="text__gradient text-center text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold uppercase mb-10">
         latest added properties
       </h1>
-      <div className=" container mx-auto grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-center items-center">
+      <div className=" container mx-auto grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-center items-center px-5 sm:p-0">
         {property.map((item) => {
           return <Property key={item.id} {...item} />;
         })}

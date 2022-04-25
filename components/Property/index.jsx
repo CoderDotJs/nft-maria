@@ -13,8 +13,8 @@ const index = ({ image, title, price, bedroom, createdAt }) => {
           layout="responsive"
           className="w-full h-full"
         ></Image>
-        <div className="text-white flex justify-between flex-wrap items-center font-normal absolute bg-gray-900 bottom-0 w-full h-auto p-3">
-          <h6 className="text-left">{bedroom} Bedrooms</h6>
+        <div className="text-white flex justify-between flex-wrap items-center font-normal absolute bg-gray-900 bottom-0 w-full h-auto p-3 text-xs sm:text-base md:text-sm lg:text-base">
+          <h6>{bedroom} Bedrooms</h6>
           <p>{createdAt}</p>
         </div>
       </div>

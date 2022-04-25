@@ -9,6 +9,8 @@ import About from "../components/About";
 import Metaverse from "../components/Metaverse";
 import Trailer from "../components/Trailer";
 import Properties from "../components/Properties";
+import TeamMembers from "../components/TeamMembers";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   return (
@@ -32,6 +34,8 @@ export default function Home() {
       <Metaverse />
       <Trailer />
       <Properties />
+      <TeamMembers />
+      <FAQ />
       <main className={styles.main}></main>
       <Footer />
     </div>

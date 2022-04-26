@@ -11,8 +11,9 @@ import Trailer from "../components/Trailer";
 import Properties from "../components/Properties";
 import TeamMembers from "../components/TeamMembers";
 import FAQ from "../components/FAQ";
+import axios from "axios";
 
-export default function Home() {
+function Home({ team }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -34,10 +35,21 @@ export default function Home() {
       <Metaverse />
       <Trailer />
       <Properties />
-      <TeamMembers />
+      <TeamMembers team={team} />
       <FAQ />
       <main className={styles.main}></main>
       <Footer />
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const { data } = await axios.get("https://nft-maria.netlify.app/api/team");
+
+  return {
+    props: {
+      team: data,
+    },
+  };
+};
+export default Home;

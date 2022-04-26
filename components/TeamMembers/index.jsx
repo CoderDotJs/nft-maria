@@ -4,18 +4,7 @@ import axios from "axios";
 import Team from "../Team";
 import styles from "../../styles/Metaverse.module.css";
 
-const index = () => {
-  const [team, setTeam] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get("https://nft-maria.netlify.app/api/team");
-      setTeam(data);
-    };
-    return () => {
-      fetchData();
-    };
-  }, []);
-
+const index = ({ team }) => {
   return (
     <section
       className={`${styles.metaverse__tilt} py-32 bg-gradient-to-tl from-slate-100 via-transparent to-rose-200 `}

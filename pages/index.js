@@ -12,8 +12,9 @@ import Properties from "../components/Properties";
 import TeamMembers from "../components/TeamMembers";
 import FAQ from "../components/FAQ";
 import Loading from "../components/Loading";
+import axios from "axios";
 
-function Home() {
+function Home({ team, faq }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -51,11 +52,25 @@ function Home() {
       <Metaverse />
       <Trailer />
       <Properties />
-      <TeamMembers />
-      <FAQ />
+      <TeamMembers team={team} />
+      <FAQ faq={faq} />
       <main className={styles.main}></main>
       <Footer />
     </div>
   );
 }
+
+export async function getServerSideProps() {
+  const teamFetch = await axios.get(`https://nft-maria.netlify.app/api/team`);
+  const team = teamFetch.data;
+  const faqFetch = await axios.get(`https://nft-maria.netlify.app/api/faq`);
+  const faq = faqFetch.data;
+  return {
+    props: {
+      team,
+      faq,
+    },
+  };
+}
+
 export default Home;

@@ -4,24 +4,24 @@ import axios from "axios";
 import TopText from "../TopText";
 import Accordion from "../Accordion";
 
-const index = () => {
-  const [faq, setFaq] = useState([]);
+const index = ({ faq }) => {
+  // const [faq, setFaq] = useState([]);
   const [expanded, setExpanded] = useState({});
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(panel);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await axios.get(`https://nft-maria.netlify.app/api/faq`);
-      setFaq(data);
-      setExpanded(data[0]);
-    };
-    return () => {
-      fetchData();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const { data } = await axios.get(`https://nft-maria.netlify.app/api/faq`);
+  //     setFaq(data);
+  //     setExpanded(data[0]);
+  //   };
+  //   return () => {
+  //     fetchData();
+  //   };
+  // }, []);
 
   return (
     <section

@@ -5,23 +5,23 @@ import Team from "../Team";
 import styles from "../../styles/Metaverse.module.css";
 import Loading from "../Loading";
 
-const index = () => {
-  const [team, setTeam] = useState([]);
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    const fetching = async () => {
-      setLoading(true);
-      const { data } = await axios.get(
-        `https://nft-maria.netlify.app/api/team`
-      );
-      setTeam(data);
-      setLoading(false);
-    };
+const index = ({ team }) => {
+  // const [team, setTeam] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   const fetching = async () => {
+  //     setLoading(true);
+  //     const { data } = await axios.get(
+  //       `https://nft-maria.netlify.app/api/team`
+  //     );
+  //     setTeam(data);
+  //     setLoading(false);
+  //   };
 
-    return () => {
-      fetching();
-    };
-  }, []);
+  //   return () => {
+  //     fetching();
+  //   };
+  // }, []);
   return (
     <section
       className={`${styles.metaverse__tilt} py-32 bg-gradient-to-tl from-slate-100 via-transparent to-rose-200 `}
@@ -34,11 +34,11 @@ const index = () => {
           return <Team key={member.id} member={member} />;
         })}
       </div>
-      {loading && (
+      {/* {loading && (
         <div className="flex w-screen h-screen justify-center items-center">
           <Loading />
         </div>
-      )}
+      )} */}
     </section>
   );
 };

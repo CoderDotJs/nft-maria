@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -11,9 +11,25 @@ import Trailer from "../components/Trailer";
 import Properties from "../components/Properties";
 import TeamMembers from "../components/TeamMembers";
 import FAQ from "../components/FAQ";
-import axios from "axios";
+import Loading from "../components/Loading";
 
-function Home({ team }) {
+function Home() {
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, []);
+
+  // if (loading) {
+  //   return (
+  //     <div className="h-screen w-screen flex justify-center items-center">
+  //       <Loading />
+  //     </div>
+  //   );
+  // }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -35,21 +51,11 @@ function Home({ team }) {
       <Metaverse />
       <Trailer />
       <Properties />
-      <TeamMembers team={team} />
+      <TeamMembers />
       <FAQ />
       <main className={styles.main}></main>
       <Footer />
     </div>
   );
 }
-
-export const getServerSideProps = async () => {
-  const { data } = await axios.get("https://nft-maria.netlify.app/api/team");
-
-  return {
-    props: {
-      team: data,
-    },
-  };
-};
 export default Home;

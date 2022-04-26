@@ -46,7 +46,7 @@ const index = () => {
   ];
   return (
     <section className="my-48 flex justify-center items-center flex-col bg-gradient-to-lr from-slate-100 via-transparent to-indigo-200">
-      <h1 className="text__gradient text-center text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold uppercase mb-10">
+      <h1 className="text__gradient text-center text-2xl lg:text-4xl font-bold uppercase mb-10">
         latest added properties
       </h1>
       <div className=" container mx-auto grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-center items-center px-5 sm:p-0">

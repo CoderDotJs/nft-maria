@@ -60,15 +60,13 @@ function Home({ team, faq }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const teamFetch = await axios.get(`https://nft-maria.netlify.app/api/team`);
-  const team = teamFetch.data;
   const faqFetch = await axios.get(`https://nft-maria.netlify.app/api/faq`);
-  const faq = faqFetch.data;
   return {
     props: {
-      team,
-      faq,
+      team: teamFetch.data,
+      faq: faqFetch.data,
     },
   };
 }

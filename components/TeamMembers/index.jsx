@@ -8,7 +8,7 @@ const index = () => {
   const [team, setTeam] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get("api/team");
+      const { data } = await axios.get("https://nft-maria.netlify.app/api/team");
       setTeam(data);
     };
     return () => {

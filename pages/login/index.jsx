@@ -106,7 +106,7 @@ const index = () => {
           </div>
 
           <h3 className="text-slate-600 mr-10 block lg:hidden">
-            Dont't Have an account?{" "}
+            {`Dont't Have an account?`}{" "}
             <span className="font-bold text-slate-700">
               <Link href="/signup" passHref>
                 Signup

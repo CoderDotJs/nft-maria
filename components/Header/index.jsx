@@ -11,9 +11,11 @@ const index = () => {
     <header>
       <div className="container mx-auto flex sm:flex md:block lg:flex justify-between items-center py-7 sm:px-0 px-7">
         <div className="2xl:2/12 lg:w-1/6 md:w-full sm:w-3/5 w-3/5 font-extrabold text-2xl md:text-center">
-          <Link href="/" passHref>
-            <span className="text__gradient uppercase">nft maria</span>
-          </Link>
+          <span className="text__gradient uppercase">
+            <Link href="/" passHref>
+              nft maria
+            </Link>
+          </span>
         </div>
         <nav className="hidden 2xl:w-4/12 xl:w-4/12 lg:w-2/5 md:w-3/5 w-2/5 md:mx-auto md:my-5 sm:hidden md:block">
           <ul className="flex lg:justify-between md:justify-around items-center text-slate-500	">
@@ -46,7 +48,11 @@ const index = () => {
         </nav>
         <div className="hidden 2xl:w-2/12 xl:w-1/5 lg:w-3/12 md:w-2/5 w-1/5 lg:m-0 md:mx-auto sm:hidden md:block">
           <ul className="flex justify-between items-center">
-            <li className="text-slate-500">Login/Signup</li>
+            <li className="text-slate-500">
+              <Link href="/login" passHref>
+                Login/Signup
+              </Link>
+            </li>
             <li className="bg-blue-400 px-7 py-1 font-bold text-white rounded-full bg__gradient">
               {/* <i className="fa-solid fa-arrow-down mr-1"></i> */}
               Metamask

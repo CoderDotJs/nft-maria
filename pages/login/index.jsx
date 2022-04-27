@@ -114,7 +114,7 @@ const index = () => {
             </span>
           </h3>
 
-          <div className=" w-full sm:w-3/5 md:w-8/12 lg:w-5/12 flex justify-between items-center md:mt-10 lg:mt-20">
+          <div className=" w-full sm:w-3/5 md:w-8/12 lg:w-5/12 flex justify-between items-center md:mt-10 lg:mt-20 mt-5">
             <h6 className="text-base text-slate-600">Login account with</h6>
             <div className="flex justify-around items-center w-6/12">
               <span className="border-2 flex justify-around items-center border-slate-200 w-10 rounded-full h-10">
